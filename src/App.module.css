@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 650px;
+    background-color: lightgray;
+    padding: 10px;
+    margin: 10px;
+}
+
+.search {
+    display: flex;
+    flex-direction: column;
+}
+input, button {
+    width: 100%;
+    height: 2rem;
+}
+input {
+    padding: 5px;
+    outline: none;
+    border: none;
+}
+input:focus {
+    border: 1px solid rgb(0, 68, 255);
+}
+button {
+    background-color: rgb(0, 68, 255);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+button:hover {
+    background-color: rgb(0, 49, 185);
+}
+
+.result {
+    background-color: white;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 15px;
+}
+.weatherIcon {
+    border-radius: 50%;
+    border: 2px solid rgb(0, 68, 255);
+}
+
+@media only screen and (min-width: 768px) {
+    .search {
+        gap: 25px;
+        flex-direction: row;
+    }
+}
+@media only screen and (min-width: 1280px) {
+    .search {
+        gap: 25px;
+        flex-direction: row;
+    }
+    .result {
+        flex-direction: row;
+    }
+}
